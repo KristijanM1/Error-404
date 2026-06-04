@@ -1,0 +1,67 @@
+.jobs-section {
+    padding-top: 28px;
+}
+
+.search-box {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 28px;
+    box-shadow: var(--soft-shadow);
+    display: flex;
+    gap: 18px;
+    align-items: end;
+    flex-wrap: wrap;
+}
+
+.search-tip {
+    flex: 1 1 100%;
+    margin-bottom: 4px;
+}
+
+.search-tip h2 {
+    font-size: 24px;
+    margin-bottom: 6px;
+}
+
+.search-tip p {
+    color: var(--muted);
+    max-width: 920px;
+}
+
+.form-group {
+    flex: 1 1 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-weight: 800;
+    color: var(--text);
+}
+
+.form-group select {
+    height: 52px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 0 14px;
+    font-size: 16px;
+    background: var(--white);
+    color: var(--text);
+    outline: none;
+}
+
+.form-group select:focus {
+    border-color: #93c5fd;
+}
+
+@media (max-width: 620px) {
+    .search-box {
+        align-items: stretch;
+    }
+
+    .search-box .button {
+        width: 100%;
+    }
+}
