@@ -1,0 +1,143 @@
+.about-hero {
+    padding: 70px 0 44px;
+    background:
+        radial-gradient(circle at top right, rgba(37, 99, 235, 0.14), transparent 34%),
+        linear-gradient(180deg, #f4f8fb, #eef6ff);
+}
+
+.about-hero-grid {
+    display: flex;
+    align-items: stretch;
+    gap: 28px;
+}
+
+.about-hero-text {
+    flex: 1.2;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 26px;
+    padding: 34px;
+    box-shadow: var(--soft-shadow);
+}
+
+.about-hero-text h1 {
+    font-size: clamp(38px, 5vw, 58px);
+    line-height: 1.05;
+    letter-spacing: -1.5px;
+    margin-bottom: 20px;
+}
+
+.about-hero-text p {
+    color: var(--muted);
+    font-size: 17px;
+    max-width: 720px;
+}
+
+.about-highlight {
+    flex: 0.8;
+    background: linear-gradient(135deg, var(--blue), var(--blue-light));
+    color: var(--white);
+    border-radius: 26px;
+    padding: 34px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-highlight span {
+    display: inline-block;
+    width: fit-content;
+    background: rgba(255, 255, 255, 0.18);
+    padding: 7px 12px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 800;
+    margin-bottom: 18px;
+}
+
+.about-highlight h2 {
+    font-size: 32px;
+    line-height: 1.15;
+    margin-bottom: 16px;
+}
+
+.about-highlight p {
+    color: #eaf2ff;
+}
+
+.about-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about-card {
+    flex: 1 1 300px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 26px;
+    box-shadow: var(--soft-shadow);
+}
+
+.about-number {
+    width: 46px;
+    height: 46px;
+    border-radius: 15px;
+    background: var(--blue-soft);
+    color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    margin-bottom: 18px;
+}
+
+.about-card h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.about-card p {
+    color: var(--muted);
+}
+
+.mission-section {
+    padding: 10px 0 60px;
+}
+
+.mission-box {
+    background: #0f172a;
+    color: var(--white);
+    border-radius: 28px;
+    padding: 34px;
+    display: flex;
+    gap: 34px;
+    align-items: flex-start;
+}
+
+.mission-box > div {
+    flex: 0.8;
+}
+
+.mission-box > p {
+    flex: 1.2;
+    color: #cbd5e1;
+    font-size: 17px;
+}
+
+.mission-box h2 {
+    font-size: clamp(28px, 4vw, 40px);
+    line-height: 1.15;
+}
+
+@media (max-width: 850px) {
+    .about-hero-grid {
+        flex-direction: column;
+    }
+
+    .mission-box {
+        flex-direction: column;
+    }
+}
