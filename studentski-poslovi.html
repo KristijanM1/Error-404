@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studentski poslovi - StudentHelper HR</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="studentski-poslovi.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container header-content">
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="StudentHelper HR logo">
+            <span>StudentHelper HR</span>
+        </a>
+        <nav class="nav">
+            <a href="index.html">Početna</a>
+            <a href="kategorije.html" class="active">Kategorije</a>
+            <a href="o-nama.html">O nama</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="page-head">
+        <div class="container">
+            <a href="kategorije.html" class="back-link">‹ Natrag na kategorije</a>
+            <h1>Pronađi studentski posao</h1>
+            <p class="page-description">
+                Odaberi grad i područje posla. U ovoj fazi filter služi kao demonstracija
+                interakcije iz prototipa.
+            </p>
+        </div>
+    </section>
+
+    <section class="section jobs-section">
+        <div class="container">
+            <form class="search-box" action="rezultati.html" method="get">
+                <div class="search-tip">
+                <h2>Savjet za pretragu</h2>
+                <p>
+                    Odaberi grad i područje posla kako bi lakše pronašao oglase koji odgovaraju
+                    tvojim interesima. Nakon prikaza rezultata možeš otvoriti detalje oglasa i
+                    provjeriti izvor za dodatne informacije.
+                </p>
+                </div>
+                <div class="form-group">
+                    <label for="grad">Grad</label>
+                    <select id="grad" name="grad">
+                        <option>Zagreb</option>
+                        <option>Split</option>
+                        <option>Rijeka</option>
+                        <option>Osijek</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="podrucje">Područje posla</label>
+                    <select id="podrucje" name="podrucje">
+                        <option>Administracija</option>
+                        <option>Ugostiteljstvo</option>
+                        <option>Prodaja</option>
+                        <option>Korisnička podrška</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="button button-blue">Pretraži poslove</button>
+            </form>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="container footer-content">
+        <div>
+            <h3>StudentHelper HR</h3>
+            <p>Centralizirana platforma za studentske informacije.</p>
+        </div>
+    </div>
+
+    <div class="container footer-bottom">
+        <p>&copy; 2026 StudentHelper HR. Sva prava pridržana.</p>
+    </div>
+</footer>
+
+</body>
+</html>
