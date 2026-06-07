@@ -62,3 +62,13 @@
 .result-meta strong {
     color: var(--text);
 }
+
+#neaktivan {
+    background-color: #9ca3af;
+    cursor: not-allowed;
+    pointer-events: none; 
+}
+
+#neaktivan:hover {
+    transform: none;
+}
